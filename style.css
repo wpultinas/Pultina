@@ -1,0 +1,253 @@
+/*home page background*/
+body.home {
+  background-image: url(/Pultina_images/top_straps.jpg);
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*materials page background*/
+body.materials {
+   background-image: 
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* about page background*/
+body.about {
+  background-image: url(/Pultina_images/leatherscraps3.jpg);
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5em; /*footer height*/
+}
+
+/* pultina logo*/
+#logo-container {
+  z-index: 102;
+  background-color: #ff6666;
+  opacity: .95;
+  position: fixed;
+  top: 3px;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+  z-index: 102;
+}
+
+/* Pages nav bar*/
+
+.header {
+  position: fixed;
+  display: flex;
+  top: 8px;
+  width: 100%;
+  z-index: 104;
+  padding: 0;
+  margin: 0;
+}
+
+.col.design {
+  background-color: #ff6666;
+  text-align: center;
+  opacity: .95;  
+  font-family: 'Alata';
+  margin: auto;
+}
+
+.col.home-logo {
+  background-color: #ff6666;
+  text-align: center;
+  opacity: 95%;
+  border-radius: 15px;
+}
+
+.col.materials {
+  background-color: #ff6666;
+  text-align: center;
+  opacity: .95;
+  font-family: 'Alata';
+  margin: auto;
+}
+.contact {
+  background-color: #ff6666;
+  text-align: center;
+  opacity: .95;
+  font-size: 2em;
+  font-family: 'Alata';
+  color: #fff;
+}
+a.logo-text:link, a.logo-text:visited {
+  color: #fff;
+  font-size: 2em;
+  
+} 
+a.logo-text:hover, a.logo-text:active {
+  color: #424242;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/*HOME PAGE*/
+
+.container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto;
+  }
+
+#slogan {
+  position: relative;
+  top: 300px;
+  width: 100%;
+  z-index: -12;
+  color: #fff;
+  font-family: 'Alata';
+  font-size: 5em;
+  text-align: center;
+}
+.home-grid {
+  position: relative;
+  top: 600px;
+  z-index: -2;
+}
+.strip_one {
+  background-color: #ff6666;
+  width: 100%;
+  height: 40%;
+  display: block;
+}
+
+.backpackleathershoot img {
+  height: auto;
+  width: 50%;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+
+.strip_two {
+  background-color: #C37E4C;
+  width: 100%;
+  height: 40%;
+  display: block;
+}
+
+.ab-model img {
+  height: auto;
+  max-width: 50%;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+
+/* End pages nav bar*/
+
+/* Footer*/
+.footer {
+ padding: 10px;
+ width: 100%;
+ }
+
+
+/* ABOUT PAGE*/
+
+col.about-materials {
+  opacity: 1;
+}
+.text-materials {
+  font-family: 'Alata';
+  font-size: 4em;
+  padding: 15%;
+  color: #fff;
+  text-align: center;
+}
+.about-designer {
+  background-color: #AAAAAA;
+  width: 100%;
+  height: 40%;
+  display: block;
+}
+.forthill img {
+  height: auto;
+  max-width: 40%;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+
+
+/* SHOP PAGE */
+
+.card-deck {
+  background-color: #fff;
+  margin: 20px;
+}
+.card-body {
+  background-color: #fff;
+}
+#design-container {
+  padding: 4px;
+  background-color: #fff;
+  position: relative;
+  top: 7em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.card-text {
+  text-align: center;
+  font-family: 'Alata';
+  font-size: 1.2em;
+  background-color: aqua;
+}
+a.product-text:link{
+	color: #424242;
+	font-size: 1.2em;
+}
+
+a.product-text:hover{
+	color: #424242;
+	font-size: 1.2em;
+}
+	
+	
+/* Design video*/
+
+
+video{
+  position: relative;
+  top: 60%;
+  transform: translateY(-40%);
+}
+.overlay {
+  position: relative;
+  top: 400px;
+}
+
+@media screen and (max-device-width: 480px){
+  video{
+    display:none;
+    }
+  .logo {
+    height: 75px;
+    width: auto;
+  }
+}
+
+/* MATERIALS PAGE*/
+
+.materials {
+  
+}
+.material-container {
+  background-color:#ff6666;
+}
