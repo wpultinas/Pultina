@@ -1,14 +1,5 @@
 <?php
-
-		 $dbhost = 'localhost';
-         $dbuser = 'us9m35py8xyyk';
-         $dbpass = 'comraderie2020';
-         $dbname = 'db9qgbyak5r67r';
-         $conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
-   
-         if(! $conn ) {
-            die('Could not connectt: ' . mysqli_error());
-         }
+require_once '../config.php';
 	// write query for all products
 	$sql = 'SELECT * FROM Products';
 
