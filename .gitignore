@@ -1,2 +1,8 @@
 # Sensitive configuration — never commit real credentials
 ../config.php
+
+# Design source files — not needed on server
+Pultina_images/**/*.heic
+Pultina_images/**/*.HEIC
+Pultina_images/**/*.ai
+Pultina_images/**/*.psd
