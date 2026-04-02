@@ -1,5 +1,5 @@
 <?php
-require_once '../config.php';
+require_once __DIR__ . '/../config.php';
 
 function normalizeImagePath($imagePath) {
 	$imagePath = trim((string) $imagePath);
