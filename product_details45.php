@@ -1,6 +1,37 @@
 <?php
 require_once '../config.php';
 
+function normalizeImagePath($imagePath) {
+	$imagePath = trim((string) $imagePath);
+
+	if ($imagePath === '') {
+		return '';
+	}
+
+	if (preg_match('#^(https?:)?//#i', $imagePath) || strpos($imagePath, 'data:') === 0) {
+		return $imagePath;
+	}
+
+	$imagePath = str_replace('\\', '/', $imagePath);
+
+	if (strpos($imagePath, '/') !== 0 && stripos($imagePath, 'Pultina_images/') !== 0) {
+		$imagePath = 'Pultina_images/' . $imagePath;
+	}
+
+	if (strpos($imagePath, '/') !== 0) {
+		$imagePath = '/' . $imagePath;
+	}
+
+	$segments = explode('/', $imagePath);
+	foreach ($segments as $index => $segment) {
+		if ($segment !== '') {
+			$segments[$index] = rawurlencode(rawurldecode($segment));
+		}
+	}
+
+	return implode('/', $segments);
+}
+
 //check GET request id param
 if(isset($_GET['id'])){
 	$id = mysqli_real_escape_string($conn, $_GET['id']);
@@ -24,11 +55,11 @@ if(isset($_GET['id'])){
 			 $category = $product["category"];
 			 $dimensions = $product["dimensions"];
 			 $materials = $product["materials"];
-			 $image_1 = $product["image_1"];
-			 $image_2 = $product["image_2"];
-			 $image_3 = $product["image_3"];
-			 $image_4 = $product["image_4"];
-			 $image_5 = $product["image_5"];
+			 $image_1 = normalizeImagePath($product["image_1"]);
+			 $image_2 = normalizeImagePath($product["image_2"]);
+			 $image_3 = normalizeImagePath($product["image_3"]);
+			 $image_4 = normalizeImagePath($product["image_4"]);
+			 $image_5 = normalizeImagePath($product["image_5"]);
 
 	
 	
