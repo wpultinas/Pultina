@@ -22,6 +22,7 @@
         <div class="dropdown-content dropdown-right">
           <a href="general_shop.php">General</a>
           <a href="kids_shop.php">Kids</a>
+          <a href="discarted_collection.php">Discarted Collection</a>
           <a href="design_your_own.php">Customize</a>
         </div>
       </div>
@@ -47,6 +48,7 @@
       <li><a href="full_circle.php">Full Circle Program</a></li>
       <li><a href="general_shop.php">Shop &mdash; General</a></li>
       <li><a href="kids_shop.php">Shop &mdash; Kids</a></li>
+      <li><a href="discarted_collection.php">Discarted Collection</a></li>
       <li><a href="design_your_own.php">Customize</a></li>
       <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&amp;business=GRVC3US4H5BLW&amp;display=1">Shopping Cart</a></li>
       <li><a href="policy_contact.php">Policy &amp; Contact</a></li>
