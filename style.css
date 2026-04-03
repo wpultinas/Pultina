@@ -392,3 +392,120 @@ video {
 @media screen and (max-device-width: 480px) {
   video { display: none; }
 }
+
+
+/* ============================================================
+   PAGE HERO (about, materials, etc.)
+   ============================================================ */
+
+.page-hero {
+  position: relative;
+  margin-top: var(--nav-h);
+  height: 60vh;
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 56px 48px;
+}
+
+.about-hero     { background-image: url(Pultina_images/leatherscraps3.jpg); }
+.materials-hero { background-image: url(Pultina_images/top_straps.jpg); }
+
+.page-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.48);
+}
+
+.page-hero .hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding: 0;
+}
+
+.page-hero .hero-title {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  margin: 0;
+}
+
+/* Full-width centered text block */
+.brand-text-col {
+  max-width: 860px;
+  padding: 64px 48px !important;
+}
+
+/* Body copy */
+.about-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--mid);
+  margin: 0 0 16px;
+}
+.about-body.light { color: rgba(255,255,255,.85); }
+
+/* Materials icon column */
+.mat-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px !important;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,.08);
+}
+.section-coral .mat-icon-col  { border-right-color: rgba(255,255,255,.2); }
+.section-dark  .mat-icon-col  { border-right-color: rgba(255,255,255,.1); }
+
+.mat-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  object-fit: contain;
+}
+
+.mat-name {
+  font-family: var(--font);
+  font-size: .95rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--dark);
+}
+.mat-name.light { color: var(--white); }
+
+.mat-source {
+  font-size: .8rem;
+  letter-spacing: .02em;
+  color: var(--mid);
+  opacity: .7;
+  margin: 8px 0 0;
+  font-style: italic;
+}
+.mat-source.light { color: rgba(255,255,255,.6); }
+
+.mat-row-border { border-bottom: 1px solid rgba(0,0,0,.07); }
+
+@media (max-width: 767px) {
+  .page-hero {
+    padding: 0 24px 36px;
+  }
+  .brand-text-col {
+    padding: 40px 24px !important;
+  }
+  .mat-icon-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    padding: 28px 24px !important;
+    flex-direction: row;
+    gap: 16px;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mat-icon { margin: 0; width: 48px; height: 48px; flex-shrink: 0; }
+}
